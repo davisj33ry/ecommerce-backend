@@ -1,0 +1,26 @@
+{
+  "name": "ecommerce-backend",
+  "version": "1.0.0",
+  "description": "E-Commerce Backend",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davisj33ry/ecommerce-backend.git"
+  },
+  "author": "Jerry D",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davisj33ry/ecommerce-backend/issues"
+  },
+  "homepage": "https://github.com/davisj33ry/ecommerce-backend#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mysql2": "^3.1.2",
+    "sequelize": "^6.28.1"
+  }
+}
