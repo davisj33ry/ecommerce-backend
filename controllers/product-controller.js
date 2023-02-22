@@ -1,4 +1,4 @@
-const { Product, Category, Tag, ProductTag } = require('../models');
+const { Product, Category, Tag, ProductTag } = require('../../models');
 
 const getProductById = async (req, res) => {
   try {

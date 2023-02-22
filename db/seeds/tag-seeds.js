@@ -1,4 +1,4 @@
-const { Tag } = require('../models');
+const { Tag } = require('/Users/davis.jerryjr/bootcamp/homwework/module-13/ecommerce-backend/models');
 
 const tagData = [
   {

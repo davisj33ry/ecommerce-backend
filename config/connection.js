@@ -13,15 +13,15 @@ const pool = mysql.createPool({
   port: process.env.DB_PORT
 });
 
-// Create Sequelize instance using the connection pool
-const sequelize = new Sequelize({
-  dialect: 'mysql',
-  dialectModule: mysql,
-  pool: {
-    max: 5,
-    min: 0,
-    idle: 10000
-  }
+// Create a new Sequelize instance
+const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASSWORD, {
+  host: process.env.DB_HOST,
+  dialect: process.env.DB_DIALECT,
+  port: process.env.DB_PORT,
 });
+
+// Export the connection object
+module.exports = sequelize;
+
 
 module.exports = sequelize;

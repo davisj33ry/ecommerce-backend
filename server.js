@@ -40,7 +40,7 @@ Tag.belongsToMany(Product, { through: ProductTag, foreignKey: 'tag_id' });
 // Sync the Sequelize models to the MySQL database
 sequelize.sync({ force: false }).then(() => {
   // Seed the database with test data
-  require('./config/seeds')();
+  require('./db/seeds');
   // Start the server
   app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 });

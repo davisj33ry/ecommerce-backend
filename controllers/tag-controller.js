@@ -1,4 +1,4 @@
-const { Tag, Product, ProductTag } = require('../models');
+const { Tag, Product, ProductTag } = require('../../models');
 
 const tagController = {
   // Get all tags

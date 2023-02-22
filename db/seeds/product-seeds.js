@@ -1,4 +1,4 @@
-const { Product } = require('../models');
+const { Product } = require('/Users/davis.jerryjr/bootcamp/homwework/module-13/ecommerce-backend/models');
 
 const productData = [
   {
